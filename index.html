@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Justine Classroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval';" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <div data-ld-src="progress-bar">
+        <div></div>
+    </div>
+    <!-- <div data-ld-src="top-bar-panel"> -->
+    <div data-ld-src="hdr-mst-pnl">
+        <span data-ld-src="open-file" data-ld-title="Abri um rquivo" w="200px">
+            <label data-ld-src="open-file-lbl">📂 Abrir Arquivo</label>
+            <input type="file" title="" accept="image/*, .pdf">
+        </span>
+        <span data-ld-src="sld-mst-pnl" data-ld-title="Zoom do Viewport">
+            <label data-ld-src="zoom-out" title="Diminuir">➖</label>
+            <span data-ld-src="zoom-slider-panel">
+                <label data-ld-src="zoom-tooltip"></label>
+                <input type="range" min="0.1" max="5" value="1" step="0.001" data-ld-src="sld-zoom">
+            </span>
+            <label data-ld-src="zoom-in" title="Ampliar">➕</label>
+        </span>
+        <span data-ld-src="page-pnl" data-ld-title="Navegador de Páginas">
+            <div data-ld-src="page-element">
+                <input type="number" min="1" data-ld-src="page-start">
+                <label>de</label>
+                <label data-ld-src="page-end"></label>
+            </div>
+        </span>
+        <span data-ld-src="editing-doc-panel">
+            <span data-ld-src="hand-draw-edit" data-ld-title="Modo de Desenho Mão Livre">
+                <input type="radio" name="edit" checked data-ld-src="input-hand-draw-edit">
+                <label></label>
+            </span>
+            <span data-ld-src="arrow-draw-edit" data-ld-title="Modo de Desenho de Setas">
+                <input type="radio" name="edit" data-ld-src="input-arrow-draw-edit">
+                <label></label>
+            </span>
+            <span data-ld-src="line-draw-edit" data-ld-title="Modo de Desenho de Linhas">
+                <input type="radio" name="edit" data-ld-src="input-line-draw-edit">
+                <label></label>
+            </span>
+            <span data-ld-src="dashed-line-draw-edit" data-ld-title="Modo de Desenho de Linhas Tracejadas">
+                <input type="radio" name="edit" data-ld-src="dashed-line-draw-edit">
+                <label></label>
+            </span>
+        </span>
+        <span data-ld-src="line-width-panel" data-ld-title="Espessura da Linha">
+            <span>
+                <label data-ld-src="line-width-slider-thumb"></label>
+                <input data-ld-src="line-width-slider" type="range" min="1" max="100" value="7">
+            </span>
+        </span>
+        <span data-ld-src="color-picker-panel" data-ld-title="Cor da Linha">
+            <span data-ld-src="color-picker-inner-panel">
+                <input type="color" data-ld-src="color-picker" title="Click Para Alterar a Cor">
+                <span data-ld-src="recent-color-panel">
+                    <input type="checkbox" title="Click Para Ver as Cores Recentes">
+                    <label>Cores Recentes</label>
+                    <span data-ld-src="recent-color-inner-panel">
+                        <span data-ld-src="recent-color">
+                            <span>
+                                <input type="radio" name="recent-color" checked>
+                                <label data-ld-src="color-1"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="recent-color">
+                                <label data-ld-src="color-2"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="recent-color">
+                                <label data-ld-src="color-3"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="recent-color">
+                                <label data-ld-src="color-4"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="recent-color">
+                                <label data-ld-src="color-5"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="recent-color">
+                                <label data-ld-src="color-6"></label>
+                            </span>
+                            <span>
+                                <input type="radio" name="recent-color">
+                                <label data-ld-src="color-7"></label>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <span data-ld-src="opacity-color-panel">
+                    <label data-ld-src="opacity-color-slider-thumb"></label>
+                    <input title="Opacidade da Cor" min="1" max="100" value="100" type="range"
+                        data-ld-src="opacity-color-slider">
+                </span>
+            </span>
+        </span>
+        <span data-ld-src="eraser-panel" data-ld-title="Borracha">
+            <span data-ld-src="eraser-icon-panel">
+                <input type="radio" name="edit" data-ld-src="input-eraser-edit">
+                <label data-ld-src="eraser-label"></label>
+                <label data-ld-src="eraser-label-icon"></label>
+            </span>
+            <span data-ld-src="eraser-slider-panel" title="Tamanho da Borracha">
+                <span>
+                    <label data-ld-src="eraser-slider-thumb"></label>
+                    <input type="range" data-ld-src="eraser-slider" min="1" max="100" value="3">
+                </span>
+            </span>
+        </span>
+        <span data-ld-src="clear-page-panel" data-ld-title="Limpar Página Atual">
+            <label></label>
+        </span>
+        <span data-ld-title="Gravar um Vídeo" data-ld-src="rec-panel">
+            <label data-ld-src="rec-panel-label">Gravar Vídeo</label>
+            <span data-ld-src="rec-checkbox-panel">
+                <input type="checkbox" data-ld-src="rec-checkbox">
+                <span data-ld-src="rec-inner-panel">
+                    <span data-ld-src="rec-inner-panel2">
+                        <span data-ld-title="enable-cam-panel">
+                            <input type="checkbox" id="cam">
+                            <label for="cam">Habilitar a Câmera</label>
+                            <span data-ld-src="cam-video-panel">
+                                <video autoplay data-ld-src="cam-video-element"></video>
+                            </span>
+                        </span>
+                        <span data-ld-src="rec-control-panel">
+                            <span>
+                                <button data-ld-src="rec-start-button">Iniciar</button>
+                            </span>
+                            <span>
+                                <button data-ld-src="rec-pause-button">Pausar</button>
+                            </span>
+                            <span>
+                                <button data-ld-src="rec-stop-button">Parar</button>
+                            </span>
+                            <span>
+                                <a href="#" data-ld-title="download-anchor-element"
+                                    title="Click para baixar o vídeo gravado">Baixar o Vídeo Gravado</a>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </span>
+    </div>
+    <!-- </div> -->
+    <div data-ld-src="cvs-pnl" tabindex="-1">
+        <div data-ld-src="content"></div>
+    </div>
+    <div data-ld-src="status-bar-panel">
+        <span>
+            <label></label>
+        </span>
+    </div>
+    <script src="lib/pdf.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
