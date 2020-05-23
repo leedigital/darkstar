@@ -1,1 +1,1 @@
-class Mouse{constructor(){document.onmousemove=document.ontouchmove=evt=>{this.x=evt.clientX,this.y=evt.clientY}}}export const MOUSE=new Mouse;
+class Mouse{constructor(){}}export const MOUSE=new Mouse;
