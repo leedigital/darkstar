@@ -74,6 +74,14 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="color" id="backgroundColor">
                 </div>
+                <div data-ld-src="gear-settings-separator"></div>
+                <div data-ld-src="gear-settings-input-panel-opacity">
+                    <label for="opacity">Opacidade</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="range" id="opacity" min="0" max="100" value="100" step="1">
+                </div>
             </span>
             <span data-ld-src="gear-settings-vertical-separator"></span>
             <span data-ld-src="gear-settings-left-panel-2">
@@ -233,10 +241,11 @@
                 <input type="checkbox" data-ld-src="rec-checkbox">
                 <span data-ld-src="rec-inner-panel">
                     <span data-ld-src="rec-inner-panel2">
-                        <span data-ld-title="enable-cam-panel">
+                        <span data-ld-src="enable-cam-panel">
                             <input type="checkbox" id="cam">
                             <label for="cam">Habilitar a Câmera</label>
-                            <span data-ld-src="cam-video-panel">
+                            <span data-ld-src="cam-video-panel"
+                                data-ld-title="Duplo click para habilitar/desabilitar o modo Picture-in-Picture">
                                 <video autoplay data-ld-src="cam-video-element"></video>
                             </span>
                         </span>
