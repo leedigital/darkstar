@@ -1,1 +1,0 @@
-class Mouse{constructor(){}}export const MOUSE=new Mouse;
